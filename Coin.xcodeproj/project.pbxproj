@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		418CBB7BE1974312A69DCF62 /* Pods_Coin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06EF64F585A6E4230C431DD1 /* Pods_Coin.framework */; };
+		9A7FA5F31FF948C6002B4DCF /* CashInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7FA5F21FF948C6002B4DCF /* CashInfoModel.swift */; };
+		9A7FA5F51FF95112002B4DCF /* CashInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7FA5F41FF95111002B4DCF /* CashInfoVM.swift */; };
 		9AB27A2C1F8BC524007BC150 /* HUDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB27A2B1F8BC524007BC150 /* HUDHelper.swift */; };
 		E880D09B1F807803002EEB55 /* Logs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880D09A1F807803002EEB55 /* Logs.swift */; };
 		E880D09F1F808D5E002EEB55 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880D09E1F808D5E002EEB55 /* Constants.swift */; };
@@ -16,14 +18,16 @@
 		E8A21C691F87D5D6008E69DD /* StringEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A21C681F87D5D6008E69DD /* StringEx.swift */; };
 		E8A21C6B1F87D754008E69DD /* NetworkHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A21C6A1F87D754008E69DD /* NetworkHelpers.swift */; };
 		E8B892DD1F7FFF8000DDA048 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B892DC1F7FFF8000DDA048 /* AppDelegate.swift */; };
-		E8B892DF1F7FFF8000DDA048 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B892DE1F7FFF8000DDA048 /* ViewController.swift */; };
-		E8B892E21F7FFF8000DDA048 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8B892E01F7FFF8000DDA048 /* Main.storyboard */; };
+		E8B892DF1F7FFF8000DDA048 /* CashInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B892DE1F7FFF8000DDA048 /* CashInfoVC.swift */; };
+		E8B892E21F7FFF8000DDA048 /* CashInfoLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8B892E01F7FFF8000DDA048 /* CashInfoLayout.storyboard */; };
 		E8B892E41F7FFF8000DDA048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8B892E31F7FFF8000DDA048 /* Assets.xcassets */; };
 		E8B892F01F80005000DDA048 /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = E8B892EF1F80005000DDA048 /* Localization.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		06EF64F585A6E4230C431DD1 /* Pods_Coin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A7FA5F21FF948C6002B4DCF /* CashInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashInfoModel.swift; sourceTree = "<group>"; };
+		9A7FA5F41FF95111002B4DCF /* CashInfoVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashInfoVM.swift; sourceTree = "<group>"; };
 		9AB27A2B1F8BC524007BC150 /* HUDHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDHelper.swift; sourceTree = "<group>"; };
 		B03B7291EE66E80BE110179C /* Pods-Coin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coin.release.xcconfig"; path = "Pods/Target Support Files/Pods-Coin/Pods-Coin.release.xcconfig"; sourceTree = "<group>"; };
 		D527711466BF6350EAC854A1 /* Pods-Coin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Coin/Pods-Coin.debug.xcconfig"; sourceTree = "<group>"; };
@@ -35,8 +39,8 @@
 		E8A21C6A1F87D754008E69DD /* NetworkHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelpers.swift; sourceTree = "<group>"; };
 		E8B892D91F7FFF8000DDA048 /* Coin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8B892DC1F7FFF8000DDA048 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E8B892DE1F7FFF8000DDA048 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E8B892E11F7FFF8000DDA048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8B892DE1F7FFF8000DDA048 /* CashInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashInfoVC.swift; sourceTree = "<group>"; };
+		E8B892E11F7FFF8000DDA048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CashInfoLayout.storyboard; sourceTree = "<group>"; };
 		E8B892E31F7FFF8000DDA048 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8B892E81F7FFF8000DDA048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8B892EF1F80005000DDA048 /* Localization.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localization.strings; sourceTree = "<group>"; };
@@ -61,6 +65,22 @@
 				B03B7291EE66E80BE110179C /* Pods-Coin.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		9A7FA5F01FF948A9002B4DCF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9A7FA5F21FF948C6002B4DCF /* CashInfoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9A7FA5F11FF948AE002B4DCF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9A7FA5F41FF95111002B4DCF /* CashInfoVM.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		E830275B1F80011C003EE7ED /* Supporting Files */ = {
@@ -104,8 +124,8 @@
 				E830275B1F80011C003EE7ED /* Supporting Files */,
 				E8B892EE1F7FFFF100DDA048 /* Resources */,
 				E8B892F11F80007900DDA048 /* Helpers */,
-				E8B892F21F8000A600DDA048 /* Models */,
-				E8B892F31F8000B400DDA048 /* ViewModels */,
+				9A7FA5F01FF948A9002B4DCF /* Model */,
+				9A7FA5F11FF948AE002B4DCF /* ViewModel */,
 				E8B892F41F8000C100DDA048 /* Views */,
 				E8B892F51F8000CF00DDA048 /* Layouts */,
 				E8B892DC1F7FFF8000DDA048 /* AppDelegate.swift */,
@@ -135,24 +155,10 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		E8B892F21F8000A600DDA048 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		E8B892F31F8000B400DDA048 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		E8B892F41F8000C100DDA048 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E8B892DE1F7FFF8000DDA048 /* ViewController.swift */,
+				E8B892DE1F7FFF8000DDA048 /* CashInfoVC.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -160,7 +166,7 @@
 		E8B892F51F8000CF00DDA048 /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
-				E8B892E01F7FFF8000DDA048 /* Main.storyboard */,
+				E8B892E01F7FFF8000DDA048 /* CashInfoLayout.storyboard */,
 			);
 			path = Layouts;
 			sourceTree = "<group>";
@@ -237,7 +243,7 @@
 			files = (
 				E8B892F01F80005000DDA048 /* Localization.strings in Resources */,
 				E8B892E41F7FFF8000DDA048 /* Assets.xcassets in Resources */,
-				E8B892E21F7FFF8000DDA048 /* Main.storyboard in Resources */,
+				E8B892E21F7FFF8000DDA048 /* CashInfoLayout.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,10 +321,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8A025041F851F890082DA91 /* UIImageViewEx.swift in Sources */,
-				E8B892DF1F7FFF8000DDA048 /* ViewController.swift in Sources */,
+				E8B892DF1F7FFF8000DDA048 /* CashInfoVC.swift in Sources */,
 				E8B892DD1F7FFF8000DDA048 /* AppDelegate.swift in Sources */,
 				E8A21C691F87D5D6008E69DD /* StringEx.swift in Sources */,
+				9A7FA5F31FF948C6002B4DCF /* CashInfoModel.swift in Sources */,
 				E8A21C6B1F87D754008E69DD /* NetworkHelpers.swift in Sources */,
+				9A7FA5F51FF95112002B4DCF /* CashInfoVM.swift in Sources */,
 				E880D0A11F809F4F002EEB55 /* Commons.swift in Sources */,
 				9AB27A2C1F8BC524007BC150 /* HUDHelper.swift in Sources */,
 				E880D09B1F807803002EEB55 /* Logs.swift in Sources */,
@@ -329,12 +337,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E8B892E01F7FFF8000DDA048 /* Main.storyboard */ = {
+		E8B892E01F7FFF8000DDA048 /* CashInfoLayout.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E8B892E11F7FFF8000DDA048 /* Base */,
 			);
-			name = Main.storyboard;
+			name = CashInfoLayout.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

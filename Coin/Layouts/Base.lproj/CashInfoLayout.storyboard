@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hkt-hP-oli">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cash Info-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CashInfoVC" customModule="Coin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0YM-KW-ZWz">
+                                <rect key="frame" x="166" y="96" width="138" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oJc-4e-ed5">
+                                <rect key="frame" x="166" y="133" width="138" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiền mua" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LN5-wp-dbN">
+                                <rect key="frame" x="16" y="100" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giá coin mua" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3w3-yp-9j0">
+                                <rect key="frame" x="16" y="137" width="99" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số lượng coin mua" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufU-1f-JLK">
+                                <rect key="frame" x="16" y="174" width="142" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tOV-og-fwW">
+                                <rect key="frame" x="166" y="169.5" width="138" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lvO-Oe-OYd">
+                                <rect key="frame" x="166" y="222.5" width="138" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giá coin hiện tại" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uon-D6-pYz">
+                                <rect key="frame" x="16" y="227" width="122" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số tiền hiện tại:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBA-SK-fcf">
+                                <rect key="frame" x="16" y="280" width="118" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CvA-Tt-n83">
+                                <rect key="frame" x="166" y="280" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQr-tN-L3x">
+                                <rect key="frame" x="244" y="301" width="60" height="30"/>
+                                <state key="normal" title="Tính tiền"/>
+                                <connections>
+                                    <action selector="tapCaculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TvP-uP-8wS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjU-gU-Exf">
+                                <rect key="frame" x="181" y="280" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ufU-1f-JLK" firstAttribute="leading" secondItem="LN5-wp-dbN" secondAttribute="leading" id="2Te-2X-kbP"/>
+                            <constraint firstItem="lvO-Oe-OYd" firstAttribute="leading" secondItem="0YM-KW-ZWz" secondAttribute="leading" id="3jr-nK-OBu"/>
+                            <constraint firstItem="tOV-og-fwW" firstAttribute="centerY" secondItem="ufU-1f-JLK" secondAttribute="centerY" id="7JD-tI-efC"/>
+                            <constraint firstItem="CvA-Tt-n83" firstAttribute="centerY" secondItem="dBA-SK-fcf" secondAttribute="centerY" id="87E-Hp-VJ1"/>
+                            <constraint firstItem="Uon-D6-pYz" firstAttribute="leading" secondItem="LN5-wp-dbN" secondAttribute="leading" id="8bH-ah-GfB"/>
+                            <constraint firstItem="oJc-4e-ed5" firstAttribute="centerY" secondItem="3w3-yp-9j0" secondAttribute="centerY" id="92h-Li-uHa"/>
+                            <constraint firstItem="oJc-4e-ed5" firstAttribute="leading" secondItem="0YM-KW-ZWz" secondAttribute="leading" id="9aQ-X8-ji2"/>
+                            <constraint firstItem="jjU-gU-Exf" firstAttribute="leading" secondItem="CvA-Tt-n83" secondAttribute="trailing" constant="4" id="ADN-Ac-7tc"/>
+                            <constraint firstItem="oJc-4e-ed5" firstAttribute="trailing" secondItem="0YM-KW-ZWz" secondAttribute="trailing" id="B8y-9A-fCv"/>
+                            <constraint firstItem="LN5-wp-dbN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ECw-Kj-x8Z"/>
+                            <constraint firstItem="CvA-Tt-n83" firstAttribute="leading" secondItem="tOV-og-fwW" secondAttribute="leading" id="JPb-8U-gHX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tOV-og-fwW" secondAttribute="trailing" constant="16" id="Shw-3T-wc7"/>
+                            <constraint firstItem="jjU-gU-Exf" firstAttribute="centerY" secondItem="dBA-SK-fcf" secondAttribute="centerY" id="UER-Qv-h89"/>
+                            <constraint firstItem="dBA-SK-fcf" firstAttribute="leading" secondItem="LN5-wp-dbN" secondAttribute="leading" id="V2X-4P-D0d"/>
+                            <constraint firstItem="tOV-og-fwW" firstAttribute="leading" secondItem="0YM-KW-ZWz" secondAttribute="leading" id="awM-yJ-59S"/>
+                            <constraint firstItem="lvO-Oe-OYd" firstAttribute="centerY" secondItem="Uon-D6-pYz" secondAttribute="centerY" id="bEd-sn-fLl"/>
+                            <constraint firstItem="DQr-tN-L3x" firstAttribute="top" secondItem="dBA-SK-fcf" secondAttribute="bottom" id="dmi-t4-WHe"/>
+                            <constraint firstItem="ufU-1f-JLK" firstAttribute="top" secondItem="3w3-yp-9j0" secondAttribute="bottom" constant="16" id="eMM-NQ-07F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DQr-tN-L3x" secondAttribute="trailing" constant="16" id="eqb-Eg-6rM"/>
+                            <constraint firstItem="3w3-yp-9j0" firstAttribute="top" secondItem="LN5-wp-dbN" secondAttribute="bottom" constant="16" id="fXC-V2-ghn"/>
+                            <constraint firstItem="lvO-Oe-OYd" firstAttribute="trailing" secondItem="0YM-KW-ZWz" secondAttribute="trailing" id="fnc-hp-NQM"/>
+                            <constraint firstItem="dBA-SK-fcf" firstAttribute="top" secondItem="Uon-D6-pYz" secondAttribute="bottom" constant="32" id="gMH-Zf-hxF"/>
+                            <constraint firstItem="tOV-og-fwW" firstAttribute="leading" secondItem="ufU-1f-JLK" secondAttribute="trailing" constant="8" id="hmq-bD-XEb"/>
+                            <constraint firstItem="3w3-yp-9j0" firstAttribute="leading" secondItem="LN5-wp-dbN" secondAttribute="leading" id="jK7-bp-9bF"/>
+                            <constraint firstItem="tOV-og-fwW" firstAttribute="trailing" secondItem="0YM-KW-ZWz" secondAttribute="trailing" id="ouh-QC-Wtw"/>
+                            <constraint firstItem="0YM-KW-ZWz" firstAttribute="centerY" secondItem="LN5-wp-dbN" secondAttribute="centerY" id="sgu-35-Wlj"/>
+                            <constraint firstItem="LN5-wp-dbN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="w4j-Du-H44"/>
+                            <constraint firstItem="Uon-D6-pYz" firstAttribute="top" secondItem="ufU-1f-JLK" secondAttribute="bottom" constant="32" id="xJT-Mw-ePa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cash Info" id="XOG-B1-dFl"/>
+                    <connections>
+                        <outlet property="lbCurrency" destination="jjU-gU-Exf" id="xXs-dR-Hjt"/>
+                        <outlet property="lbTotalMoney" destination="CvA-Tt-n83" id="0vz-oR-19p"/>
+                        <outlet property="txtCoinCurrentlyPrice" destination="lvO-Oe-OYd" id="EMw-YU-sSe"/>
+                        <outlet property="txtCoinPrice" destination="oJc-4e-ed5" id="1W0-6K-Bth"/>
+                        <outlet property="txtCoinQuantity" destination="tOV-og-fwW" id="RwG-YV-4Oe"/>
+                        <outlet property="txtPayment" destination="0YM-KW-ZWz" id="3Bc-aF-DnK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="455.19999999999999" y="118.29085457271366"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QkI-Zz-MGk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hkt-hP-oli" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jhW-H7-FQw">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vJA-G8-mxb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uag-9H-5yT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-372" y="118"/>
+        </scene>
+    </scenes>
+</document>

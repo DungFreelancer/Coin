@@ -28,3 +28,5 @@ var IOS: Int {
     }
 }
 
+// UserDefault key
+let KEY_INFO = "Info"
