@@ -28,10 +28,9 @@ class CashInfoVM {
     }
     
     func caculate(payment: Double, coinPrice: Double, coinQuantity: Double, coinCurrentlyPrice: Double) -> Double {
-        // Caculate total money.
-        //...
+        let total = (coinQuantity * coinCurrentlyPrice) - payment
         
-        return 0.0
+        return total
     }
     
 }
