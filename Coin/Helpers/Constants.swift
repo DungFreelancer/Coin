@@ -30,3 +30,8 @@ var IOS: Int {
 
 // UserDefault key
 let KEY_INFO = "Info"
+
+// URL
+let URL_BTC_PRICE = "https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,EUR"
+let URL_ETH_PRICE = "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD,EUR"
+let URL_OTN_PRICE = "https://min-api.cryptocompare.com/data/price?fsym=OTN&tsyms=USD,EUR"

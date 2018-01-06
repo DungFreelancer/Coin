@@ -23,6 +23,10 @@ class CashInfoVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        cashInfoVM.getPrice(by: .BTC, complete: { (price) in
+            self.txtCoinCurrentlyPrice.text = price
+        })
+        
         // Load cash info to layout.
         if let info: CashInfoModel = self.cashInfoVM.loadInfo() {
             self.txtPayment.text = String(info.payment)

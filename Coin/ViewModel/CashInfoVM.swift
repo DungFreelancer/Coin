@@ -8,6 +8,17 @@
 
 import Foundation
 
+enum Coin: String {
+    case BTC = "BTC"
+    case ETH = "ETH"
+    case OTN = "OTN"
+}
+
+enum Currency: String {
+    case USD = "USD"
+    case EUR = "EUR"
+}
+
 class CashInfoVM {
     
     func saveInfo(_ info: CashInfoModel) {
@@ -31,6 +42,30 @@ class CashInfoVM {
         let total = (coinQuantity * coinCurrentlyPrice) - payment
         
         return total
+    }
+    
+    func getPrice(by coin:Coin, complete:((_ price:String?)->())?) {
+        switch coin {
+        case .BTC:
+            self.getPrice(url: URL_BTC_PRICE, complete: complete)
+        case .ETH:
+            self.getPrice(url: URL_ETH_PRICE, complete: complete)
+        case .OTN:
+            self.getPrice(url: URL_OTN_PRICE, complete: complete)
+        }
+    }
+    
+    private func getPrice(url:String, complete:((_ price:String?)->())?) {
+        NetworkHelper.sharedInstance.get(url: url, complete: { (json, error) in
+            if let json = json {
+                Logs.debug(json)
+                if let complete = complete {
+                    complete(String(json[Currency.USD.rawValue].double ?? 0.0))
+                }
+            } else {
+                Logs.error(error.debugDescription)
+            }
+        })
     }
     
 }
