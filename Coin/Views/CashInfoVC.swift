@@ -23,8 +23,11 @@ class CashInfoVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        HUDHelper.sharedInstance.showLoading(view: self.view)
         cashInfoVM.getPrice(by: .BTC, complete: { (price) in
             self.txtCoinCurrentlyPrice.text = price
+            
+            HUDHelper.sharedInstance.hideLoading()
         })
         
         // Load cash info to layout.
