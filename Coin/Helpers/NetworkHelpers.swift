@@ -7,6 +7,7 @@
 //
 
 import Alamofire
+import SwiftyJSON
 
 class NetworkHelper {
     
@@ -27,6 +28,22 @@ class NetworkHelper {
             }
         }
         reachabilityManager?.startListening()
+    }
+    
+    func get(url: String, complete:((_ success: JSON?,_ error: Error?)->())?) {
+        Alamofire.request(url, method: .get).validate().responseJSON { response in
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+                if let complete = complete {
+                    complete(json, nil)
+                }
+            case .failure(let error):
+                if let complete = complete {
+                    complete(nil, error)
+                }
+            }
+        }
     }
     
 }

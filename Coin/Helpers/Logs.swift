@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Log {
+struct Logs {
     
     static func debug(_ message: Any, filePath: String = #file, function: String = #function, line: Int = #line) {
         if DEBUG {
