@@ -32,16 +32,26 @@ class NetworkHelper {
     
     func get(url: String, complete:((_ success: JSON?,_ error: Error?)->())?) {
         Alamofire.request(url, method: .get).validate().responseJSON { response in
-            switch response.result {
-            case .success(let value):
-                let json = JSON(value)
-                if let complete = complete {
-                    complete(json, nil)
-                }
-            case .failure(let error):
-                if let complete = complete {
-                    complete(nil, error)
-                }
+            self.respone(result: response.result, complete: complete)
+        }
+    }
+    
+    func post(url: String, params: Dictionary<String, Any>, complete:((_ success: JSON?,_ error: Error?)->())?) {
+        Alamofire.request(url, method: .post, parameters: params).validate().responseJSON { response in
+            self.respone(result: response.result, complete: complete)
+        }
+    }
+    
+    func respone(result: Result<Any>, complete: ((_ success: JSON?,_ error: Error?)->())?) {
+        switch result {
+        case .success(let value):
+            let json = JSON(value)
+            if let complete = complete {
+                complete(json, nil)
+            }
+        case .failure(let error):
+            if let complete = complete {
+                complete(nil, error)
             }
         }
     }
